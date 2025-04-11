@@ -1,9 +1,9 @@
 import streamlit as st
 
-# CONFIG
+# CONFIGURAÇÃO DA PÁGINA
 st.set_page_config(page_title="Portfólio | Sales Brito", page_icon="💼", layout="wide")
 
-# ESTILO
+# ESTILO PERSONALIZADO
 st.markdown("""
     <style>
         .main-title {font-size: 3em; font-weight: bold; color: #2E86C1; text-align: center; margin-bottom: 0.5em;}
@@ -16,23 +16,23 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# TÍTULO
+# TÍTULO E SUBTÍTULO
 st.markdown('<div class="main-title">Portfólio Profissional</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Desenvolvedor Python | Segurança | Projetos Interativos</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Desenvolvedor Python | Segurança | Soluções Digitais</div>', unsafe_allow_html=True)
 
 # SOBRE MIM
 st.subheader("👨‍💻 Sobre mim")
 st.write("""
-Sou Marcos Vinicius Sales de Brito, desenvolvedor com formação em Tecnologia da Informação e experiência em segurança, suporte técnico e criação de sistemas personalizados.
+Sou Marcos Vinicius Sales de Brito, profissional formado em **Tecnologia da Informação** com forte atuação em desenvolvimento de sistemas, automações em Python e soluções de produtividade digital.
 
-Tenho foco em soluções práticas, com domínio em:
+💡 Tenho experiência com:
+- Desenvolvimento em **Python** (Streamlit, automações, dashboards)
+- **JavaScript**, **HTML** e **CSS** para web
+- Integrações com planilhas, bancos de dados e plataformas como Google Drive
+- Segurança patrimonial e digital
+- Suporte técnico, monitoramento e gestão de informações
 
-- Python (Streamlit, automações, integração com planilhas)
-- JavaScript e HTML (projetos web e interfaces)
-- Excel Avançado, Banco de Dados e Dashboards
-- Organização de estudos, investimentos e controle financeiro
-
-Sou criador de plataformas como o **Painel @sales_brito** e o sistema **AlfaProvas**, voltadas à produtividade, educação e inovação digital.
+Busco sempre entregar projetos funcionais, modernos e de alto impacto profissional.
 """)
 
 # PROJETOS
@@ -41,23 +41,18 @@ st.subheader("🖥️ Projetos em Destaque")
 projects = [
     {
         "title": "Painel @sales_brito",
-        "desc": "Painel completo com organização de estudos (PMGO), investimentos integrados, tarefas, clima, senhas e atalhos. Visual profissional e seguro.",
+        "desc": "Painel completo de produtividade com estudos para concursos, finanças, tarefas, clima, senhas e atalhos. Acesso protegido e visual profissional.",
         "link": "https://salesbrito.streamlit.app"
     },
     {
         "title": "MegaMasters",
-        "desc": "Simulador da Mega-Sena com sorteios automáticos, estatísticas e interface interativa. Desenvolvido em Python com Streamlit.",
+        "desc": "Simulador da Mega-Sena com sorteio automático, estatísticas e design interativo. Criado em Python com Streamlit.",
         "link": "https://megamasters.streamlit.app"
     },
     {
-        "title": "AlfaProvas",
-        "desc": "Sistema completo de criação e correção de provas com QR Code, painel de professor e portal do aluno. Ideal para escolas e cursinhos.",
-        "link": "https://alfa-provas-demo.streamlit.app/"  # Substitua se mudar o domínio
-    },
-    {
-        "title": "Portfólio Online (PDF)",
-        "desc": "Versão visual do portfólio criada no Canva. Design moderno e ideal para apresentar em entrevistas e redes sociais.",
-        "link": "https://www.canva.com/design/DAGkU_qyLM4/r8Uu1LR8ThOtVbpmpsr9xQ/edit"
+        "title": "AlfaProvas (em desenvolvimento)",
+        "desc": "Sistema de geração e correção de provas com QR Code, painel de professor e portal do aluno. Projeto em andamento para escolas e cursinhos.",
+        "link": ""
     }
 ]
 
@@ -66,7 +61,8 @@ for proj in projects:
         st.markdown('<div class="project-box">', unsafe_allow_html=True)
         st.markdown(f'<div class="project-title">{proj["title"]}</div>', unsafe_allow_html=True)
         st.markdown(f'<div class="project-desc">{proj["desc"]}</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="btn-link"><a href="{proj["link"]}" target="_blank">🔗 Acessar Projeto</a></div>', unsafe_allow_html=True)
+        if proj["link"]:
+            st.markdown(f'<div class="btn-link"><a href="{proj["link"]}" target="_blank">🔗 Acessar Projeto</a></div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
 # CONTATO
@@ -74,6 +70,6 @@ st.subheader("📞 Contato")
 st.write("""
 - 📧 E-mail: SALESBRITO080@GMAIL.COM  
 - 📱 WhatsApp: (61) 99691-8191  
-- 📷 Instagram: @salesbrito_  
-- 🧑‍💼 Usuário profissional: @Sales_brito  
+- 📷 Instagram: [@salesbrito_](https://instagram.com/salesbrito_)  
+- 👨‍💻 Usuário profissional: @Sales_brito  
 """)
