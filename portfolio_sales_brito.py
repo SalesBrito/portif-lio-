@@ -1,6 +1,6 @@
 import streamlit as st
 
-# CONFIGURAÇÕES INICIAIS
+# CONFIG
 st.set_page_config(page_title="Portfólio | Sales Brito", page_icon="💼", layout="wide")
 
 # ESTILO
@@ -18,12 +18,21 @@ st.markdown("""
 
 # TÍTULO
 st.markdown('<div class="main-title">Portfólio Profissional</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Desenvolvedor Python | TI & Segurança | Projetos Interativos</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Desenvolvedor Python | Segurança | Projetos Interativos</div>', unsafe_allow_html=True)
 
 # SOBRE MIM
 st.subheader("👨‍💻 Sobre mim")
 st.write("""
-Sou Marcos Vinicius Sales de Brito, profissional formado em Tecnologia da Informação, com experiência em desenvolvimento de sistemas com Python, segurança patrimonial, automação de processos e suporte técnico. Possuo conhecimento em Streamlit, planilhas, organização de estudos e investimentos.
+Sou Marcos Vinicius Sales de Brito, desenvolvedor com formação em Tecnologia da Informação e experiência em segurança, suporte técnico e criação de sistemas personalizados.
+
+Tenho foco em soluções práticas, com domínio em:
+
+- Python (Streamlit, automações, integração com planilhas)
+- JavaScript e HTML (projetos web e interfaces)
+- Excel Avançado, Banco de Dados e Dashboards
+- Organização de estudos, investimentos e controle financeiro
+
+Sou criador de plataformas como o **Painel @sales_brito** e o sistema **AlfaProvas**, voltadas à produtividade, educação e inovação digital.
 """)
 
 # PROJETOS
@@ -32,22 +41,22 @@ st.subheader("🖥️ Projetos em Destaque")
 projects = [
     {
         "title": "Painel @sales_brito",
-        "desc": "Painel completo com abas de estudo (PMGO), investimentos integrados, tarefas, clima, senhas e atalhos. Visual profissional, seguro e responsivo.",
+        "desc": "Painel completo com organização de estudos (PMGO), investimentos integrados, tarefas, clima, senhas e atalhos. Visual profissional e seguro.",
         "link": "https://salesbrito.streamlit.app"
     },
     {
         "title": "MegaMasters",
-        "desc": "Simulador da Mega-Sena com sorteios automáticos, interface intuitiva e estatísticas. Feito com Streamlit.",
+        "desc": "Simulador da Mega-Sena com sorteios automáticos, estatísticas e interface interativa. Desenvolvido em Python com Streamlit.",
         "link": "https://megamasters.streamlit.app"
     },
     {
-        "title": "Currículo Campeão",
-        "desc": "Currículo profissional com objetivo otimizado, layout moderno e destaque para as habilidades em segurança e TI.",
-        "link": "https://drive.google.com"  # Substitua com seu link real se desejar
+        "title": "AlfaProvas",
+        "desc": "Sistema completo de criação e correção de provas com QR Code, painel de professor e portal do aluno. Ideal para escolas e cursinhos.",
+        "link": "https://alfa-provas-demo.streamlit.app/"  # Substitua se mudar o domínio
     },
     {
-        "title": "Portfólio Online",
-        "desc": "Portfólio criado no Canva com design moderno, responsivo e pronto para apresentar em entrevistas ou redes sociais.",
+        "title": "Portfólio Online (PDF)",
+        "desc": "Versão visual do portfólio criada no Canva. Design moderno e ideal para apresentar em entrevistas e redes sociais.",
         "link": "https://www.canva.com/design/DAGkU_qyLM4/r8Uu1LR8ThOtVbpmpsr9xQ/edit"
     }
 ]
@@ -63,8 +72,8 @@ for proj in projects:
 # CONTATO
 st.subheader("📞 Contato")
 st.write("""
-- E-mail: SALESBRITO080@GMAIL.COM  
-- WhatsApp: (61) 99691-8191  
-- Instagram: @salesbrito_  
-- Usuário: @Sales_brito  
+- 📧 E-mail: SALESBRITO080@GMAIL.COM  
+- 📱 WhatsApp: (61) 99691-8191  
+- 📷 Instagram: @salesbrito_  
+- 🧑‍💼 Usuário profissional: @Sales_brito  
 """)
